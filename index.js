@@ -56,7 +56,7 @@ class ChartjsNode extends EventEmitter {
             </html>`,[]).then(window => {
 
                 this._window = window;
-                const canvas = require('canvas');
+                const canvas = require('canvas-prebuilt');
                 const canvasMethods = ['HTMLCanvasElement'];
 
                 // adding window properties to global (only properties that are not already defined).
